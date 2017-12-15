@@ -42,22 +42,27 @@ uが観測可能な入力でdは観測不可能な入力である。
 補助出力方程式というらしいぞ。
 
 ---
-## Math test
-OK  
+## Platooning Controlについて
+Plattoning 制御について調べる。
 
-$$
-\sum_{k=1}^n \frac{k\lambda}{\xi}
-$$
 
-OK?
+### Lecture
+http://www.mogi.bme.hu/TAMOP/jarmurendszerek_iranyitasa_angol/math-ch11.html
 
-$$
-\sum_{k=1}^n \frac{k\lambda}{\xi} \exp^{-j2\pi k}
-$$
+![](2017-12-11-23-25-10.png)
 
-NOT OK  
+ここで，距離が0になる時に加速度を0にするように制御するのが定石らしい。
 
-$$
-\min \sum_{k=1}^n \frac{k\lambda}{\xi} 
-$$
+### Paper1 ：センサのゆらぎとフィルタ特性の影響
+https://www.jstage.jst.go.jp/article/ieejias1987/114/11/114_11_1149/_pdf
+
+重要ワード：「距離のセンサにはノイズ除去のセンサを使うが」ナイスワード。
+この観測のフィルタと制御のフィルタを比較することが 目的になります。
+
+加速度指令値で制御する。確かに？
+この辺はうまく考える必要がありそう。
+
+
+
+### Paper2：
 
